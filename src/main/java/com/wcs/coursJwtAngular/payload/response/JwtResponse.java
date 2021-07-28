@@ -2,8 +2,17 @@ package com.wcs.coursJwtAngular.payload.response;
 
 import java.util.List;
 
+/*
+ * Classe qui sera utilisé pour encapsuler la réponse au moment du login
+ * Elle contient toutes les informations qui nécessite d'être stocké coté FRONT
+ * (username, mail, liste des rôles du User
+ * Ainsi que le Token JWT généré 
+ */
 public class JwtResponse {
 	private String token;
+	/*
+	 * On renvoi le type du Token attendu ("Bearer")
+	 */
 	private String type = "Bearer";
 	private Long id;
 	private String username;
