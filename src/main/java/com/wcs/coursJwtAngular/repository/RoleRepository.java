@@ -10,5 +10,6 @@ import com.wcs.coursJwtAngular.models.Role;
 
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long> {
+	// Méthode construire permettant de retourner un rôle par son name
 	Optional<Role> findByName(ERole name);
 }

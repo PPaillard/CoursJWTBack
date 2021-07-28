@@ -9,6 +9,7 @@ public class Role {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
+	// On précise que la propriété name de rôle est la valeur de l'énumération ERole
 	@Enumerated(EnumType.STRING)
 	@Column(length = 15)
 	private ERole name;
